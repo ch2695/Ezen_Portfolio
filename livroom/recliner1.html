@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style/style_Common.css">
+	<link rel="stylesheet" href="../style/style_itemDtl.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../script/script_Common.js"></script>
+	<script src="../script/script_itemDtl.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="innerHeader">
+				<div>
+					<div id="hdLogo">
+						<a href="../index.html"><img src="../images/footer_logo.jpg" alt=""></a>
+					</div>
+					<nav id="hdgnb">
+						<ul>
+							<li><a href="#">마이페이지</a></li>
+							<li><a href="../member/Login.html">로그인</a></li>
+							<li><a href="../member/Signup.html">회원가입</a></li>
+							<li><a href="../aside/customer.html">고객센터</a></li>
+						</ul>
+					</nav>
+					<div id="search">
+						<input type="text" placeholder="검색" id="sch">
+						<img src="../images/btn_search.png" alt="">
+					</div>
+				</div>
+				<nav id="maingnb">
+					<ul id="mainMenu">
+						<li class="mainLi">
+							<a href="#">거실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="sofa.html">소파</a></li>
+								<li class="subLi"><a href="#">거실장</a></li>
+								<li class="subLi"><a href="#">장식장</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">주방가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">식탁</a></li>
+								<li class="subLi"><a href="#">식탁의자</a></li>
+								<li class="subLi"><a href="#">싱크</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">침실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">침대</a></li>
+								<li class="subLi"><a href="#">매트리스</a></li>
+								<li class="subLi"><a href="#">드레싱룸</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">인테리어 가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">거울</a></li>
+								<li class="subLi"><a href="#">조명</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">이벤트/프로모션</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">할인이벤트</a></li>
+								<li class="subLi"><a href="#">프로모션</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header> <!-- header#header -->
+
+		<main id="main">
+			<div>
+				<div id="sphImg">
+					<img src="../images/gallery1.PNG" alt="" width="600" height="500">
+				</div>
+				<div id="selectArea">
+					<div id="itemNm">벤스 NEW 하임 천연가죽 4인 소파 New Haim (Beige, Deep gray, Dark navy)</div>
+					<div id="oriprice">
+						<span>정가</span>
+						<span>2,290,000</span>
+						<span>원</span>
+					</div>
+					<div id="panmega">
+						<span>판매가</span>
+						<span>1670000</span>
+						<span>원</span>
+					</div>
+					<ul>
+						<li>
+							<span>수량</span>
+							<select id="itemCnt">
+								<option value="0">수량선택</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</li>
+						<li>
+							<span>색상선택</span>
+							<select>
+								<option>색상선택</option>
+								<option>라이트그레이</option>
+								<option>차콜그레이</option>
+								<option>네이비</option>
+								<option>화이트</option>
+								<option>블랙</option>
+							</select>
+						</li>
+						<li>
+							<span>총 상품 금액</span>
+							<span id="res">0</span>
+							<span>원</span>
+						</li>
+					</ul>
+					<div id="btnArea">
+						<span>장바구니 담기</span>
+						<span>바로구매</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<p>리뷰 작성하기</p>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<span class="reviewBtn">
+                    <a href="">
+                        <span><img src="../images/cameraImg.PNG" alt=""></span>
+				        <span>사진추가</span>
+                    </a>
+				</span>
+				<span>
+					<select>
+						<option></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+				</span>
+				<span class="reviewBtn">리뷰 남기기</span>
+			</div>
+			<div id="reView">
+				<p>프리미엄 상품평</p>
+				<div class="recrv01">
+					<div class="Point">
+						<span><img src="../images/star01.PNG" alt=""></span>
+						<span>아주만족</span>
+					</div>
+					<div class=rvMent>
+						원하는 배송날짜에 정확하게 받았습니다.
+						기사분들도 친절하시고 꼼꼼하게 잘 설치 해주셨네요.
+						실제로 보니 칼라가 너무 예쁘고 사이트에서 본거보다 조금 밝은듯 하네요
+						가죽이 부드럽고 쿠션감은 적당합니다
+						그런데 약간 눌린부분이 있는..
+					</div>
+					<div class="rvImg">
+						<ul>
+							<li><img src="../images/reviewImg09.jpg" alt="" width="150" height="150"></li>
+							<li><img src="../images/reviewImg10.jpg" alt="" width="150" height="150"></li>
+						</ul>
+					</div>
+				</div> <!-- recrv01 -->
+				<div class="recrv02">
+					<div class="Point">
+						<span><img src="../images/star01.PNG" alt=""></span>
+						<span>아주만족</span>
+					</div>
+					<div class=rvMent>
+						너무 편안하고 고급스럽습니다. 신혼 집이라서 많이 찾아보고 심사숙고 해서 결정한 소파인데 만족도가 너무 높아요. 와이프도 너무 좋아하는 걸 보니 마음이 좋습니다. 진심으로 추천해드려요 !
+						조만간 어머님도 사드릴 예정입니다 벤스 최고
+					</div>
+					<div class="rvImg">
+						<ul>
+							<li><img src="../images/reviewImg11.jpg" alt="123" width="150" height="150"></li>
+						</ul>
+					</div>
+				</div> <!-- recrv02 -->
+				<div class="review">
+					<div class="Point">
+						<span><img src="../images/star01.PNG" alt=""></span>
+						<span>아주만족</span>
+					</div>
+					<div class=rvMent>
+						너무 예뻐요~ 이사하면서 한달전 주문해서 이사당일오후에 받았어요. 고급지고 보고있어도 흐뭇하네요. 남편이 주말이면 저기앉아서 티브이 보는 낙에 사네요. 남편이 살짝 아쉬운것은 카우치형으로 살걸 하는것 정도~~다리를 뻗고 싶은거죠. 그래서 조만간 스톨도 하나..
+					</div>
+					<div class="rvImg">
+						<ul>
+							<li><img src="../images/reviewImg12.jpg" alt="" width="150" height="150"></li>
+							<li><a href="#"><img src="../images/reviewImg12.jpg" alt="" width="150" height="150"></a></li>
+						</ul>
+					</div>
+				</div> <!-- recrv03 -->
+			</div>
+		</main>
+
+		<footer id="footer">
+			<div id="innerFooter">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+				<div>
+					<div id="footerLogo"><a href="#"><img src="../images/footer_logo.jpg" alt=""></a></div>
+					<div id="copyright">
+						<address>주소 : 서울특별시 서대문구 신촌로 141 은하빌딩 1층 이젠아카데미 컴퓨터학원 </address>
+						<p>대표전화 : 02-123-4567</p>
+						<p>팩스 : 123-456-789</p>
+						<p>이메일 : chhj1993@naver.com</p>
+					</div>
+					<div id="snsicon">
+						<a href="#"><img src="../images/ico_blog.png" alt="블롣그아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_fb.png" alt="페북아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_in.png" alt="인스타아이콘" width="25"></a>
+					</div>
+				</div>
+			</div>
+		</footer> <!-- footer#fotoer -->
+
+		<div id="topBtnArea">Top</div>
+
+	</div> <!-- div#wrap -->
+
+	<!-- 모달레이어 팝업 소스 위치 시작 -->
+	<div id="modalBackground" class="modal3">
+		<div class="modalArticle">
+			<img src="../images/reviewImg10.jpg" alt="">
+			<div>
+				<span><img src="../images/star01.PNG" alt=""></span>
+				<span>아주만족</span>
+			</div>
+			<div>
+				원하는 배송날짜에 정확하게 받았습니다.
+				기사분들도 친절하시고 꼼꼼하게 잘 설치 해주셨네요.
+				실제로 보니 칼라가 너무 예쁘고 사이트에서 본거보다 조금 밝은듯 하네요
+				가죽이 부드럽고 쿠션감은 적당합니다
+				그런데 약간 눌린부분이 있는데 시간이 지나면 펴질것 같네요
+			</div>
+			<span class="closeBtn">&times;</span>
+		</div>
+	</div>
+
+	<div id="modalBackground" class="modal4">
+		<div class="modalArticle">
+			<img src="../images/reviewImg11.jpg" alt="">
+			<div>
+				<span><img src="../images/star01.PNG" alt=""></span>
+				<span>아주만족</span>
+			</div>
+			<div>
+				너무 편안하고 고급스럽습니다. 신혼 집이라서 많이 찾아보고 심사숙고 해서 결정한 소파인데 만족도가 너무 높아요. 와이프도 너무 좋아하는 걸 보니 마음이 좋습니다. 진심으로 추천해드려요 !
+				조만간 어머님도 사드릴 예정입니다 벤스 최고
+			</div>
+			<span class="closeBtn">&times;</span>
+		</div>
+	</div>
+	<!-- 모달레이어 팝업 소스 위치 끝 -->
+</body>
+
+</html>

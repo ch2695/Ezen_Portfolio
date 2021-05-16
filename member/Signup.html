@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style/style_Common.css">
+	<link rel="stylesheet" href="../style/style_signup.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../script/script_Common.js"></script>
+	<script src="../script/script_Join.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="innerHeader">
+				<div>
+					<div id="hdLogo">
+						<a href="../index.html"><img src="../images/footer_logo.jpg" alt=""></a>
+					</div>
+					<nav id="hdgnb">
+						<ul>
+							<li><a href="#">마이페이지</a></li>
+							<li><a href="Login.html">로그인</a></li>
+							<li><a href="#">회원가입</a></li>
+							<li><a href="../aside/customer.html">고객센터</a></li>
+						</ul>
+					</nav>
+					<div id="search">
+						<input type="text" placeholder="검색">
+						<img src="../images/btn_search.png" alt="">
+					</div>
+				</div>
+			</div>
+		</header> <!-- header#header -->
+
+		<main id="main">
+			<div id="JoinTxt">
+				회원가입
+			</div>
+			<div id="name">
+				<input type="text" placeholder="이름" id="uNm">
+			</div>
+			<div id="id">
+				<input type="text" placeholder="아이디" id="uID">
+				<button id="idChk">중복확인</button>
+			</div>
+			<div id="pwd">
+				<input type="password" placeholder="비밀번호" id="uPW" class="uPW">
+			</div>
+			<div id="pwd_Re">
+				<input type="password" placeholder="비밀번호 확인" id="uPW_Re" class="uPW">
+				<span><input type="checkbox" id="pwchkBtn">비밀번호 보기</span>
+			</div>
+			<div id="email">
+				<input type="text" placeholder="이메일" id="uEmail">
+			</div>
+			<div id="birthDay">
+				<select id="birthYear"></select>
+
+				<select>
+					<option>월</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+
+				<select id="Date"></select>
+
+			</div>
+			<div id="phone">
+				<span><input type="text" placeholder="휴대전화" id="phNum"></span>
+				<span class="btn" id="phcert">인증</span>
+			</div>
+			<div id="sms">
+				<span><input type="text" placeholder="SMS 인증번호" id="certNum"></span>
+				<span class="btn" id="certNo">확인</span>
+			</div>
+			<div id="membership">
+				<div>이용약관</div>
+				<iframe src="source/membership.html" frameborder="0"></iframe>
+			</div>
+			<div id="ageChk">
+				<div>
+					<input type="checkbox" id="agechkbox">
+					<span>14세 이상입니다. (필수)</span>
+				</div>
+				<div>
+					*회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의 개인정보 수집을 최소화하고 &nbsp;편리한 회원가입을 제공합니다.
+				</div>
+			</div>
+			<div id="Chk">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<input type="checkbox" id="wholeChk">
+								<span>전체동의</span>
+							</td>
+						</tr>
+						<tr>
+							<td id="subChkboxArea">
+								<span>
+									<input type="checkbox" id="chk1" class="subChkbox">이용약관
+									<span>내용보기</span>
+								</span>
+								<span>
+									<input type="checkbox" id="chk2" class="subChkbox">개인정보 수집
+									<span>내용보기</span>
+								</span>
+								<span>
+									<input type="checkbox" id="chk3" class="subChkbox">개인정보 제3자 제공
+									<span>내용보기</span>
+								</span>
+								<span>
+									<input type="checkbox" id="chk4" class="subChkbox">개인정보 위탁
+									<span>내용보기</span>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="joinBtn">
+				<span>동의하고 가입완료</span>
+			</div>
+		</main> <!-- main#main -->
+
+		<footer id="footer">
+			<div id="innerFooter">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+				<div>
+					<div id="footerLogo"><a href="#"><img src="../images/footer_logo.jpg" alt=""></a></div>
+					<div id="copyright">
+						<address>주소 : 서울특별시 서대문구 신촌로 141 은하빌딩 1층 이젠아카데미 컴퓨터학원 </address>
+						<p>대표전화 : 02-123-4567</p>
+						<p>팩스 : 123-456-789</p>
+						<p>이메일 : chhj1993@naver.com</p>
+					</div>
+					<div id="snsicon">
+						<a href="#"><img src="../images/ico_blog.png" alt="블롣그아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_fb.png" alt="페북아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_in.png" alt="인스타아이콘" width="25"></a>
+					</div>
+				</div>
+			</div>
+		</footer> <!-- footer#fotoer -->
+
+	</div> <!-- div#wrap -->
+
+	<div id="topBtnArea">Top</div>
+</body>
+
+</html>

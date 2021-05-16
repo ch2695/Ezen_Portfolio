@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style/style_Common.css">
+	<link rel="stylesheet" href="../style/style_itemDtl.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../script/script_Common.js"></script>
+	<script src="../script/script_itemDtl.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="innerHeader">
+				<div>
+					<div id="hdLogo">
+						<a href="../index.html"><img src="../images/footer_logo.jpg" alt=""></a>
+					</div>
+					<nav id="hdgnb">
+						<ul>
+							<li><a href="#">마이페이지</a></li>
+							<li><a href="../member/Login.html">로그인</a></li>
+							<li><a href="../member/Signup.html">회원가입</a></li>
+							<li><a href="../aside/customer.html">고객센터</a></li>
+						</ul>
+					</nav>
+					<div id="search">
+						<input type="text" placeholder="검색" id="sch">
+						<img src="../images/btn_search.png" alt="">
+					</div>
+				</div>
+				<nav id="maingnb">
+					<ul id="mainMenu">
+						<li class="mainLi">
+							<a href="#">거실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="sofa.html">소파</a></li>
+								<li class="subLi"><a href="#">거실장</a></li>
+								<li class="subLi"><a href="#">장식장</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">주방가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="../kitchen/table.html">식탁</a></li>
+								<li class="subLi"><a href="#">식탁의자</a></li>
+								<li class="subLi"><a href="#">싱크대</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">침실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">침대</a></li>
+								<li class="subLi"><a href="#">매트리스</a></li>
+								<li class="subLi"><a href="#">드레싱룸</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">인테리어 가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">거울</a></li>
+								<li class="subLi"><a href="#">조명</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">이벤트/프로모션</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">할인이벤트</a></li>
+								<li class="subLi"><a href="#">프로모션</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header> <!-- header#header -->
+
+		<main id="main">
+			<div>
+				<div id="sphImg">
+					<img src="../images/couch3.jpg" alt="" width="600" height="500">
+				</div>
+				<div id="selectArea">
+					<div id="itemNm">모니카 천연면피 통가죽 4인 카우치형 소파</div>
+					<div id="oriprice">
+						<span>정가</span>
+						<span>3,650,000</span>
+						<span>원</span>
+					</div>
+					<div id="panmega">
+						<span>판매가</span>
+						<span>2190000</span>
+						<span>원</span>
+					</div>
+					<ul>
+						<li>
+							<span>수량</span>
+							<select id="itemCnt">
+								<option value="0">수량선택</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</li>
+						<li>
+							<span>색상선택</span>
+							<select>
+								<option>색상선택</option>
+								<option>라이트그레이</option>
+								<option>차콜그레이</option>
+								<option>네이비</option>
+								<option>화이트</option>
+								<option>블랙</option>
+							</select>
+						</li>
+						<li>
+							<span>총 상품 금액</span>
+							<span id="res">0</span>
+							<span>원</span>
+						</li>
+					</ul>
+					<div id="btnArea">
+						<span>장바구니 담기</span>
+						<span>바로구매</span>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<p>리뷰 작성하기</p>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<span class="reviewBtn">
+					<a href="">
+						<span><img src="../images/cameraImg.PNG" alt=""></span>
+						<span>사진추가</span>
+					</a>
+				</span>
+				<span>
+					<select>
+						<option></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+				</span>
+				<span class="reviewBtn">리뷰 남기기</span>
+			</div>
+			<div id="reView">
+				<p>프리미엄 상품평</p>
+				<div class="review07">
+					<div class="Point">
+						<span><img src="../images/star01.PNG" alt=""></span>
+						<span>아주만족</span>
+					</div>
+					<div class=rvMent>
+						처음 구매하는 색상이라 잘 선택한것인지 고민이 많았는데 배송받고 너후 이쁘더라구요
+						정말 편하기도하고 코로나 때문에 지인들 초대는 못해 사진으로 보여 줬는데 정말 이건 기대 이상 좋다는 말을 많이 ...
+					</div>
+					<div class="rvImg">
+						<ul>
+							<li><img src="../images/reviewImg26.jpg" alt="" width="150" height="150"></li>
+						</ul>
+					</div>
+				</div> <!-- div.review07 -->
+
+				<div class="review08">
+					<div class="Point">
+						<span><img src="../images/star01.PNG" alt=""></span>
+						<span>아주만족</span>
+					</div>
+					<div class=rvMent>
+						첫입주아파트로 입주하면서 근3달은 쇼파쇼핑을 했나봐요,자*모,일*,채*,블랑드** 진짜 온라인,오프라인상관없이 마구자비로 봤어요.
+						그래서 베른을 디자트 전시상품에서 만나게 되었네요,전시상품인거 전혀 ...
+					</div>
+					<div class="rvImg">
+						<ul>
+							<li><img src="../images/reviewImg27.jpg" alt="" width="150" height="150"></li>
+							<li><img src="../images/reviewImg28.jpg" alt="" width="150" height="150"></li>
+						</ul>
+					</div>
+				</div> <!-- div.review08 -->
+
+				<div class="review09">
+					<div class="Point">
+						<span><img src="../images/star01.PNG" alt=""></span>
+						<span>아주만족</span>
+					</div>
+					<div class=rvMent>
+						소파 없이 생활한지 15년 정도 된것 같아요
+						오랜 좌식생활을 하시던 어머니, 아버지가 앉았다가 일어날 때 힘들다고 하셔서 큰 마음 먹고 소파를 찾는 중에 가격과 디자인 모두 마음에 드는 모니카 통가죽 소 ...
+					</div>
+					<div class="rvImg">
+						<ul>
+							<li><img src="../images/reviewImg29.jpg" alt="" width="150" height="150"></li>
+							<li><img src="../images/reviewImg30.jpg" alt="" width="150" height="150"></li>
+						</ul>
+					</div>
+				</div> <!-- div.review09 -->
+			</div>
+		</main> <!-- main#main -->
+
+		<footer id="footer">
+			<div id="innerFooter">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+				<div>
+					<div id="footerLogo"><a href="#"><img src="../images/footer_logo.jpg" alt=""></a></div>
+					<div id="copyright">
+						<address>주소 : 서울특별시 서대문구 신촌로 141 은하빌딩 1층 이젠아카데미 컴퓨터학원 </address>
+						<p>대표전화 : 02-123-4567</p>
+						<p>팩스 : 123-456-789</p>
+						<p>이메일 : chhj1993@naver.com</p>
+					</div>
+					<div id="snsicon">
+						<a href="#"><img src="../images/ico_blog.png" alt="블롣그아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_fb.png" alt="페북아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_in.png" alt="인스타아이콘" width="25"></a>
+					</div>
+				</div>
+			</div>
+		</footer> <!-- footer#fotoer -->
+
+		<div id="topBtnArea">Top</div>
+	</div> <!-- div#wrap -->
+
+	<!-- 모달레이어 팝업 소스 위치 시작 -->
+	<div id="modalBackground" class="modal5">
+		<div class="modalArticle">
+			<img src="../images/reviewImg26.jpg" alt="">
+			<div>
+				<span><img src="../images/star01.PNG" alt=""></span>
+				<span>아주만족</span>
+			</div>
+			<div>
+				처음 구매하는 색상이라 잘 선택한것인지 고민이 많았는데 배송받고 너후 이쁘더라구요
+				정말 편하기도하고 코로나 때문에 지인들 초대는 못해 사진으로 보여 줬는데 정말 이건 기대 이상 좋다는 말을 많이 들었네요
+				디자인 아트 디자트 이름 잘지으신거 같아요
+				소파에서 7살 아들 남편 저 매일 떠나질 않아요 가격도 착하고 결혼7년만에 구매한 소파라 신혼 느낌 납니다 강추해요
+			</div>
+			<span class="closeBtn">&times;</span>
+		</div>
+	</div> <!-- div.modal5 -->
+
+	<div id="modalBackground" class="modal6">
+		<div class="modalArticle">
+			<img src="../images/reviewImg28.jpg" alt="">
+			<div>
+				<span><img src="../images/star01.PNG" alt=""></span>
+				<span>아주만족</span>
+			</div>
+			<div>
+				첫입주아파트로 입주하면서 근3달은 쇼파쇼핑을 했나봐요,자*모,일*,채*,블랑드** 진짜 온라인,오프라인상관없이 마구자비로 봤어요.
+				그래서 베른을 디자트 전시상품에서 만나게 되었네요,전시상품인거 전혀모르겠어요,좀더 저렴하게 아주 잘샀습니다. 부담스럽지도 않고 세련된 화이트쇼파 찾던쇼파라 만족감이 높습니다.게다가 배송하시는 기사님도 화이트쇼파 관리법까지 꼼꼼히 얘기해주시고 감사했어요~주문부터 배송까지 만족하는 디자트였네요
+			</div>
+			<span class="closeBtn">&times;</span>
+		</div>
+	</div> <!-- div.modal6 -->
+
+	<div id="modalBackground" class="modal7">
+		<div class="modalArticle">
+			<img src="../images/reviewImg29.jpg" alt="">
+			<div>
+				<span><img src="../images/star01.PNG" alt=""></span>
+				<span>아주만족</span>
+			</div>
+			<div>
+				소파 없이 생활한지 15년 정도 된것 같아요
+				오랜 좌식생활을 하시던 어머니, 아버지가 앉았다가 일어날 때 힘들다고 하셔서 큰 마음 먹고 소파를 찾는 중에 가격과 디자인 모두 마음에 드는 모니카 통가죽 소파를 발견하고 다른 소파들은 봐도 눈에 들어오지 않아 구매하게 되었어요!!
+
+				소파를 받고 생각보다 큰 사이즈에 1차 감동 , 집 분위기와 잘 어울려 2차 감동, 앉아 본 후 편안함에 3차 감동까지 ㅇ0ㅇ!!
+				엄마랑 아빠 모두 퇴근하시고 집에 오셔서 앉아보시더니 너무 편하고 좋다고 좋아하셨어요.
+				앞으로 소파와 저는 한몸일 것 같아요!!
+			</div>
+			<span class="closeBtn">&times;</span>
+		</div>
+	</div> <!-- div.modal7 -->
+
+</body>
+
+</html>

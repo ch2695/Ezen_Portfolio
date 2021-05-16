@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a 				      {  text-decoration: none;  }
+a:link 			     {  color: #222;  }
+a:visited 			{  color: #222;  }
+a:hover 			{  color: #222;  }
+a:active 		  	 {  color: #222;  }
+img 				  {  vertical-align: middle;  }
+ul 						{  list-style: none;  }
+/* Reset 끝 */
+
+/* GuideLine */
+/*div#wrap 			      {  border: 1px solid #000;  }*/
+/*header#header          {  border: 2px solid #f80;  }*/
+/*div#innerHeader        {  border: 1px solid #f80;  }*/
+/*#innerHeader>*    	  {  border: 1px solid #000;  }*/
+main#main                {  border-top: 1px solid #ccc;  }
+/*footer#footer             {  border: 1px solid #000;  }*/
+/* GuideLine */
+
+/* main#main 시작 */
+main#main #mainDiv {
+	width: 1400px;
+	height: 900px;
+    padding: 30px 50px;
+    display: flex;
+	margin: 0 auto;
+}
+#main aside#aside {
+    width: 180px;
+}
+aside#aside ul {
+	display: inline-block;
+	border: 2px solid #55a255;
+	border-radius: 10px;
+	padding: 10px;
+	padding-top: 20px;
+}
+aside#aside ul li:first-child {
+	font-size: 20px;
+}
+aside#aside ul li {
+	font-size: 17px;
+	width: 203px;
+	text-align: left;
+	padding: 0 0px 30px 30px;
+	border: none;
+	cursor: pointer;
+}
+aside#aside ul li.selected {
+	font-weight: bold;
+}
+#aside hr {
+	width: 180px;
+	position: relative;
+	top: -15px;
+	left: 10px;
+}
+#main div#inqArea {
+    width: 1200px;
+	height: 700px;
+	padding-left: 120px;
+}
+#main div#inqArea p {
+	font-size: 27px;
+}
+div#inqArea>div:not(:first-child) {
+	display: none;
+}
+	/* 공지사항 시작 */
+div#notice {
+	height: 730px;
+}
+div#notice table {
+	font-size: 15px;
+	width: 1000px;
+	margin: 40px auto;
+	border-collapse: collapse;
+	margin-bottom: 60px;
+	text-align: center;
+}
+div#notice table th, td {
+	padding: 15px 0;
+}
+div#notice table th {
+	border-bottom: 1px solid #375737;
+}
+div#notice table td {
+	border-bottom: 1px solid #ccc;
+}
+div#notice table td:first-child,
+div#notice table td:last-child {
+	width: 70px;
+}
+div#notice table td:nth-child(2) {
+	width: 150px;
+}
+div#notice table td:nth-child(3) {
+	width: 590px;
+}
+div#notice table td:nth-child(4) {
+	width: 190px;
+}
+div#notice table tr:not(:first-child) td:nth-child(3) {
+    width: 540px;
+	text-align: left;
+	padding-left: 25px;
+	cursor: pointer;
+}
+#notice table tr:not(:first-child):hover {
+	background-color: rgba(204, 204, 204, 0.06);
+}
+div#notice table:not(:nth-child(2)) {
+    display: none;
+}
+ul#noticePage {
+	width: 200px;
+	margin: 0 auto;
+}
+ul#noticePage li {
+	width: 30px;
+	float: left;
+	display: inline-block;
+	cursor: pointer;
+}
+ul#noticePage li.selected {
+	font-weight: bold;
+}
+	/* 공지사항 끝 */
+
+	/* A/S 접수 시작 */
+div#asInquiry {
+/*	border: 1px solid #f80;*/
+	height: 730px;
+}
+div#asInquiry>div span:first-child {
+	font-size: 25px;
+	font-weight: bold;
+}
+div#asInquiry>div span:last-child {
+	font-size: 20px;
+}
+div#asInquiry table {
+	width: 800px;
+	border-collapse: collapse;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+div#asInquiry table td {
+	border: 1px solid #eee;
+	border-left: none;
+}
+div#asInquiry table td:first-child {
+	font-size: 14px;
+	width: 150px;
+	vertical-align: top;
+	border: 1px solid #eee;
+	border-left: none;
+	text-align: left;
+	padding: 20px 0px 20px 20px;
+	background-color: rgba(221, 221, 221, 0.21);
+}
+div#asInquiry table td:last-child {
+	padding-left: 17px;
+}
+table span {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+table#asTbl1 tr#modelNo input {
+	width: 200px;
+	height: 40px;
+	border: 1px solid #aaa;
+	outline: none;
+	padding-left: 7px;
+}
+tr#buyDay select {
+	width: 100px;
+	height: 34px;
+	border: 1px solid #aaa;
+	outline: none;
+}
+textarea {
+	border: 1px solid #aaa;
+	outline: none;
+	padding: 6px;
+}
+table#asTbl2 tr:last-child td:last-child {
+	padding-left: 13px;
+}
+table#asTbl2 input#name {
+	width: 200px;
+	height: 40px;
+	border: 1px solid #aaa;
+	outline: none;
+	padding-left: 7px;
+}
+table#asTbl2 select#phoneNum {
+	border: 1px solid #aaa;
+	width: 150px;
+	height: 45px;
+	padding: 10px 0;
+	margin-right: 10px;
+	outline: none;
+}
+table#asTbl2 tr#phone input {
+	width: 150px;
+	height: 45px;
+	position: relative;
+	top: -2px;
+	border: 1px solid #aaa;
+	margin-right: 10px;
+	padding-left: 5px;
+	outline: none;
+}
+div#postalCode span:first-child {
+	width: 175px;
+	height: 45px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	background-color: rgba(221, 221, 221, 0.21);
+}
+div#postalCode span:last-child {
+	width: 165px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border: 1px solid #000;
+	display: inline-block;
+	position: relative;
+	top: -16px;
+	cursor: pointer;
+}
+div#firstAddr span {
+	width: 500px;
+	height: 45px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	background-color: rgba(221, 221, 221, 0.21);
+}
+div#lastAddr input {
+	width: 500px;
+	height: 45px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin-left: 5px;
+	margin-top: 10px;
+	outline: none;
+	padding-left: 7px;
+}
+div#btnArea>span {
+	width: 180px;
+	height: 60px;
+	font-size: 20px !important;
+	font-weight: normal !important;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 60px;
+	text-align: center;
+	position: relative;
+	left: 270px;
+}
+div#btnArea>span:first-child {
+	color: #fff;
+	background-color: #aaa;
+	margin-right: 10px;
+}
+div#btnArea>span:nth-child(2) {
+	color: #fff;
+	background-color: #000;
+}
+	/* A/S 접수 끝 */
+
+/* main#main 끝 */
+
+
+
+

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a 				      {  text-decoration: none;  }
+a:link 			     {  color: #222;  }
+a:visited 			{  color: #222;  }
+a:hover 			{  color: #222;  }
+a:active 		  	 {  color: #222;  }
+img 				  {  vertical-align: middle;  }
+ul 						{  list-style: none;  }
+/* Reset 끝 */
+
+/* GuideLine */
+/*div#wrap 			      {  border: 1px solid #000;  }*/
+/*header#header          {  border: 2px solid #f80;  }*/
+/*div#innerHeader        {  border: 1px solid #f80;  }*/
+/*#innerHeader>*    	  {  border: 1px solid #000;  }*/
+/*main#main                {  border: 1px solid #08f;  }*/
+/*footer#footer             {  border: 1px solid #000;  }*/
+/* GuideLine */
+
+/* main#main 시작 */
+main#main {
+	height: 2800px;
+}
+
+	/* div#slideshow 시작 */
+div#slideshow {
+    width: 1388px;
+	height: 450px;
+    margin: 0px auto;
+}
+div#slideshow div#shuttleFrame a {
+    position: absolute;
+}
+#shuttleFrame a:not(:first-child) {
+    display: none;
+}
+	/* div#slideshow 시작 */
+
+	/* aside#aside 시작 */
+aside#aside {
+	margin-top: 100px;
+}
+aside#aside div#bestitem {
+	width: 1440px;
+	margin: 0 auto;
+/*	border: 1px solid #000;*/
+	height: 500px;
+	margin-bottom: 100px;
+}
+div#bestitem h1 {
+	text-align: center;
+	margin-bottom: 40px;
+/*	border: 1px solid #000;*/
+}
+div#gallery {
+	display: flex;
+	justify-content: center;
+}
+div#nextBtn {
+	width: 90px;
+	height: 400px;
+	line-height: 300px;
+	text-align: center;
+/*	border: 1px solid #000;*/
+}
+div#nextBtn img {
+	cursor: pointer;
+}
+div#bstslide {
+	width: 1257px;
+	height: 400px;
+/*	border: 1px solid #f00;*/
+	overflow: hidden;
+}
+div#bstFrame {
+	width: 1680px;
+	height: 400px;
+/*	border: 2px solid #00f;*/
+	display: flex;
+}
+div#bstFrame table {
+	width: 400px;
+/*	border: 1px solid #000;*/
+/*	border-collapse: collapse;*/
+	margin-right: 23px;
+}
+div#bstFrame table td {
+/*	border: 1px solid #000;*/
+}
+div#bstFrame table tr:first-child {
+	height: 300px;
+}
+div#bstFrame table tr:nth-child(2) {
+	height: 100px;
+    font-size: 15px;
+    padding : 20px 0;
+}
+div#prevBtn {
+	width: 90px;
+	text-align: center;
+/*	border: 1px solid #000;*/
+	line-height: 300px;
+}
+div#prevBtn img {
+	cursor: pointer;
+}
+div#saleItem {
+	margin-bottom: 80px;
+}
+div#saleItem h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+div#saleGallery {
+	width: 1360px;
+	height: 700px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 220px;
+}
+div.saleArticle {
+	width: 320px;
+}
+div.saleArticle>span {
+	display: inline-block;
+	padding: 20px 0 40px 0;
+}
+div#lstAside {
+    width: 1080px;
+    margin: 70px auto;
+/*    border: 1px solid #000;*/
+    display: flex;
+}
+div#lstAside>div {
+    flex: 1;
+    height: 160px;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+div#consulting {
+    width: 250px;
+    font-size: 17px;
+    position: relative;
+    left: 40px;
+}
+div#lstAside>div:last-child {
+    border: none;
+}
+div.asideBtn>a>div {
+    margin-bottom: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+div.asideBtn>div:first-child span:first-child {
+    position: relative;
+    top: -5px;
+}
+	/* aside#aside 끝 */
+
+    /* div#banner */
+div#banner {
+    width: 1300px;
+    height: 204px;
+    margin: 140px auto;
+}
+    /* div#banner */
+
+/* main#main 끝 */
+
+
+
+
+

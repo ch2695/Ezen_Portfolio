@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style/style_Common.css">
+	<link rel="stylesheet" href="../style/style_bed.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../script/script_Common.js"></script>
+	<script src="../script/script_bed.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="innerHeader">
+				<div>
+					<div id="hdLogo">
+						<a href="../index.html"><img src="../images/footer_logo.jpg" alt=""></a>
+					</div>
+					<nav id="hdgnb">
+						<ul>
+							<li><a href="#">마이페이지</a></li>
+							<li><a href="../member/Login.html">로그인</a></li>
+							<li><a href="../member/Signup.html">회원가입</a></li>
+							<li><a href="../aside/customer.html">고객센터</a></li>
+						</ul>
+					</nav>
+					<div id="search">
+						<input type="text" placeholder="검색" id="sch">
+						<img src="../images/btn_search.png" alt="">
+					</div>
+				</div>
+				<nav id="maingnb">
+					<ul id="mainMenu">
+						<li class="mainLi">
+							<a href="#">거실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="../livroom/sofa.html">소파</a></li>
+								<li class="subLi"><a href="#">거실장</a></li>
+								<li class="subLi"><a href="#">장식장</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">주방가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="../kitchen/table.html">식탁</a></li>
+								<li class="subLi"><a href="#">식탁의자</a></li>
+								<li class="subLi"><a href="#">싱크대</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">침실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="../sleproom/bed.html">침대</a></li>
+								<li class="subLi"><a href="#">매트리스</a></li>
+								<li class="subLi"><a href="#">드레싱룸</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">인테리어 가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">거울</a></li>
+								<li class="subLi"><a href="#">조명</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">이벤트/프로모션</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">할인이벤트</a></li>
+								<li class="subLi"><a href="#">프로모션</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header> <!-- header#header -->
+
+		<main id="main">
+			<h2>침대</h2>
+			<button class="selected">슈퍼싱글/싱글</button>
+			<button>킹/퀸</button>
+			<button>패밀리</button>
+			<button>기능성침대</button>
+			<button>침대가드/ACC</button>
+			<div class="tabArea" id="supersingBed">
+			    <nav id="gnb">
+                    <ul>
+                        <li id="bestBed" class="selected">인기순</li>
+                        <li id="newBed">신상품순</li>
+                        <li>낮은가격순</li>
+                        <li>높은가격순</li>
+                        <li>평점높은순</li>
+                    </ul>
+                </nav>
+
+                <div class="galleryList" id="supsingbst">
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/bestsupersingle1.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>토스트 네츄럴 슈퍼싱글 침대(엔슬립E 매트 5종 중 택1)</span>
+                        <span>358,600</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/bestsupersingle2.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>필로시 멀티수납 슈퍼싱글침대(매트별도)</span>
+                        <span>411,600</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/bestsupersingle3.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>가드증정★꼼므주니어 수납 슈퍼싱글침대 (매트별도)</span>
+                        <span>352,800</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle4.jpg" alt="" width="300" height="270">
+                        <span>토스트 네츄럴 퀸 침대(엔슬립E 매트 5종 중 택1)</span>
+                        <span>440,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#"><img src="../images/bestsupersingle5.jpg" alt="" width="300" height="270"></a>
+                        <span>로넌 수납 슈퍼싱글 침대 (2색 중 택1, 매트별도)</span>
+                        <span>342,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle6.jpg" alt="" width="300" height="270">
+                        <span>헤닝 호텔침대 멀티수납형 슈퍼싱글(3종 중 택1, 매트별도)
+                        </span>
+                        <span>358,600</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle7.jpg" alt="" width="300" height="270">
+                        <span>뉴 탐 저상형 Q+SS 패밀리침대 슬림형 한쪽가드(매트별도)</span>
+                        <span>675,200</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle8.jpg" alt="" width="300" height="270">
+                        <span>뉴트 저상형 슈퍼싱글 침대 기본형(엔슬립E 매트 5종 중 택1)</span>
+                        <span>242,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle9.jpg" alt="" width="300" height="270">
+                        <span>아카이브 쿠션헤드 슈퍼싱글 수납침대(매트별도,USB 조명포함)</span>
+                        <span>757,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle10.jpg" alt="" width="300" height="270">
+                        <span>데이지 일면형 슈퍼싱글침대 (매트별도)</span>
+                        <span>374,300</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle11.jpg" alt="" width="300" height="270">
+                        <span>필로시 모던 멀티수납 슈퍼싱글침대(매트별도)</span>
+                        <span>421,400</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle12.jpg" alt="" width="300" height="270">
+                        <span>뉴 탐 저상형 SS 슈퍼싱글침대 쿠션형 한쪽가드(매트별도)</span>
+                        <span>449,800</span>
+                        <span>원</span>
+                    </div>
+                </div> <!-- div#susingbst -->
+
+                <div class="galleryList" id="supsingnew">
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/newsupersingle1.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>내추럴옹이 헤드형 /수납헤드 서랍형 편백침대 모음
+                        </span>
+                        <span>359,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/newsupersingle2.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>힐유 편백나무 서랍형 침대 모음</span>
+                        <span>299,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/newsupersingle3.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>[파뜨가구] 베스 LED 조명 호텔식 와이드 침대 프레임 (Q/K공용)</span>
+                        <span>1,299,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle4.jpg" alt="" width="300" height="270">
+                        <span>[파뜨가구] 루이 LED 조명 호텔식 와이드 침대 프레임 (Q/K공용) - 크림화이트</span>
+                        <span>1,399,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle5.jpg" alt="" width="300" height="270">
+                        <span>로넌 수납 슈퍼싱글 침대 (2색 중 택1, 매트별도)</span>
+                        <span>342,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle6.jpg" alt="" width="300" height="270">
+                        <span>[파뜨가구] 리즈 원목 LED 조명 와이드 수납침대 프레임 (Q/K공용) - 내추럴
+                        </span>
+                        <span>1,119,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle7.jpg" alt="" width="300" height="270">
+                        <span>[개인결제복사]데이지 슈퍼싱글침대 (매트별도)</span>
+                        <span>234,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle8.jpg" alt="" width="300" height="270">
+                        <span>모던바로크 클라우드 3단계터치 LED 수납 침대(SS/Q/K) 3colors, 제주배송가능</span>
+                        <span>239,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle9.jpg" alt="" width="300" height="270">
+                        <span>마리메종 우보 LED원목수납침대 SS 프레임 매트별도</span>
+                        <span>253,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle10.jpg" alt="" width="300" height="270">
+                        <span>데이지 일면형 슈퍼싱글침대 (매트별도)</span>
+                        <span>374,300</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle11.jpg" alt="" width="300" height="270">
+                        <span>필로시 모던 멀티수납 슈퍼싱글침대(매트별도)</span>
+                        <span>421,400</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle12.jpg" alt="" width="300" height="270">
+                        <span>뉴 탐 저상형 SS 슈퍼싱글침대 쿠션형 한쪽가드(매트별도)</span>
+                        <span>449,800</span>
+                        <span>원</span>
+                    </div>
+                </div> <!-- div#supsingnew -->
+			</div>    <!-- div#supersingBed -->
+
+			<div class="tabArea" id="kingQueen">
+                <nav id="gnb">
+                    <ul>
+                        <li id="bestBed" class="selected">인기순</li>
+                        <li id="newBed">신상품순</li>
+                        <li>낮은가격순</li>
+                        <li>높은가격순</li>
+                        <li>평점높은순</li>
+                    </ul>
+                </nav>
+
+                <div class="galleryList" id="kingQnbst">
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/kingbestImg1.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>레브침대(매트리스 별도)</span>
+                        <span>546,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/kingbestImg2.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>휴 모던침대</span>
+                        <span>560,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/kingbestImg3.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>뉴트 리클라이닝 가죽 퀸 침대(2색택1,매트별도)</span>
+                        <span>519,400</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/kingbestImg4.jpg" alt="" width="300" height="270">
+                        <span>블랑쉬 침대 Q (매트별도) - 블랑쉬 침대 쿠션형 Q</span>
+                        <span>906,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#"><img src="../images/kingbestImg5.jpg" alt="" width="300" height="270"></a>
+                        <span>헤닝 호텔침대 퀸(3종 중 택1, 매트별도)</span>
+                        <span>351,800</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/kingbestImg6.jpg" alt="" width="300" height="270">
+                        <span>뉴 탐 저상형 Q+SS 패밀리침대 슬림형 양쪽가드(매트별도)
+                        </span>
+                        <span>744,800</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/kingbestImg7.jpg" alt="" width="300" height="270">
+                        <span>아카이브 쿠션헤드 퀸 수납침대(매트별도,USB 조명포함)</span>
+                        <span>766,400</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/kingbestImg8.jpg" alt="" width="300" height="270">
+                        <span>뉴 탐 저상형 SS 슈퍼싱글침대 슬림형(매트별도)</span>
+                        <span>286,100</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle9.jpg" alt="" width="300" height="270">
+                        <span>아카이브 쿠션헤드 슈퍼싱글 수납침대(매트별도,USB 조명포함)</span>
+                        <span>757,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle10.jpg" alt="" width="300" height="270">
+                        <span>데이지 일면형 슈퍼싱글침대 (매트별도)</span>
+                        <span>374,300</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle11.jpg" alt="" width="300" height="270">
+                        <span>필로시 모던 멀티수납 슈퍼싱글침대(매트별도)</span>
+                        <span>421,400</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle12.jpg" alt="" width="300" height="270">
+                        <span>뉴 탐 저상형 SS 슈퍼싱글침대 쿠션형 한쪽가드(매트별도)</span>
+                        <span>449,800</span>
+                        <span>원</span>
+                    </div>
+                </div> <!-- div#kingQnbst -->
+
+                <div class="galleryList" id="kingQnnew">
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/kingnewImg.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>모던바로크 르누아르 호텔식 LED 수납 침대(SS/Q/K) 3colors, 제주배송가능
+                        </span>
+                        <span>329,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/kingnewImg2.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>아인슈페너 Q 침대_조명포함 (2색택1, 매트별도)</span>
+                        <span>1,629,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <a href="#">
+                            <img src="../images/kingnewImg3.jpg" alt="" width="300" height="270">
+                        </a>
+                        <span>올리엣 퀸침대(양면확장형)</span>
+                        <span>752,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/kingnewImg4.jpg" alt="" width="300" height="270">
+                        <span>아카이브 슬림헤드 퀸 수납침대(매트별도)</span>
+                        <span>550,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle5.jpg" alt="" width="300" height="270">
+                        <span>로넌 수납 슈퍼싱글 침대 (2색 중 택1, 매트별도)</span>
+                        <span>342,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle6.jpg" alt="" width="300" height="270">
+                        <span>[파뜨가구] 리즈 원목 LED 조명 와이드 수납침대 프레임 (Q/K공용) - 내추럴
+                        </span>
+                        <span>1,119,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle7.jpg" alt="" width="300" height="270">
+                        <span>[개인결제복사]데이지 슈퍼싱글침대 (매트별도)</span>
+                        <span>234,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle8.jpg" alt="" width="300" height="270">
+                        <span>모던바로크 클라우드 3단계터치 LED 수납 침대(SS/Q/K) 3colors, 제주배송가능</span>
+                        <span>239,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/newsupersingle9.jpg" alt="" width="300" height="270">
+                        <span>마리메종 우보 LED원목수납침대 SS 프레임 매트별도</span>
+                        <span>253,000</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle10.jpg" alt="" width="300" height="270">
+                        <span>데이지 일면형 슈퍼싱글침대 (매트별도)</span>
+                        <span>374,300</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle11.jpg" alt="" width="300" height="270">
+                        <span>필로시 모던 멀티수납 슈퍼싱글침대(매트별도)</span>
+                        <span>421,400</span>
+                        <span>원</span>
+                    </div>
+                    <div class="galleryArticle">
+                        <img src="../images/bestsupersingle12.jpg" alt="" width="300" height="270">
+                        <span>뉴 탐 저상형 SS 슈퍼싱글침대 쿠션형 한쪽가드(매트별도)</span>
+                        <span>449,800</span>
+                        <span>원</span>
+                    </div>
+                </div> <!-- div#susingbst -->
+            </div> <!-- div#kingQnnew -->
+
+		</main> <!-- main#main -->
+
+		<footer id="footer">
+			<div id="innerFooter">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+				<div>
+					<div id="footerLogo"><a href="#"><img src="../images/footer_logo.jpg" alt=""></a></div>
+					<div id="copyright">
+						<address>주소 : 서울특별시 서대문구 신촌로 141 은하빌딩 1층 이젠아카데미 컴퓨터학원 </address>
+						<p>대표전화 : 02-123-4567</p>
+						<p>팩스 : 123-456-789</p>
+						<p>이메일 : chhj1993@naver.com</p>
+					</div>
+					<div id="snsicon">
+						<a href="#"><img src="../images/ico_blog.png" alt="블롣그아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_fb.png" alt="페북아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_in.png" alt="인스타아이콘" width="25"></a>
+					</div>
+				</div>
+			</div>
+		</footer> <!-- footer#fotoer -->
+
+		<div id="topBtnArea">Top</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style/style_Common.css">
+	<link rel="stylesheet" href="../style/style_order.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../script/script_Common.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="innerHeader">
+				<div>
+					<div id="hdLogo">
+						<a href="../index.html"><img src="../images/footer_logo.jpg" alt=""></a>
+					</div>
+					<nav id="hdgnb">
+						<ul>
+							<li><a href="#">마이페이지</a></li>
+							<li><a href="../member/Login.html">로그인</a></li>
+							<li><a href="../member/Signup.html">회원가입</a></li>
+							<li><a href="../aside/customer.html">고객센터</a></li>
+						</ul>
+					</nav>
+					<div id="search">
+						<input type="text" placeholder="검색" id="sch">
+						<img src="../images/btn_search.png" alt="">
+					</div>
+				</div>
+				<nav id="maingnb">
+					<ul id="mainMenu">
+						<li class="mainLi">
+							<a href="#">거실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="../livroom/sofa.html">소파</a></li>
+								<li class="subLi"><a href="#">거실장</a></li>
+								<li class="subLi"><a href="#">장식장</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">주방가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="../kitchen/table.html">식탁</a></li>
+								<li class="subLi"><a href="#">식탁의자</a></li>
+								<li class="subLi"><a href="#">싱크대</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">침실가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="../sleproom/bed.html">침대</a></li>
+								<li class="subLi"><a href="#">매트리스</a></li>
+								<li class="subLi"><a href="#">드레싱룸</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">인테리어 가구</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">거울</a></li>
+								<li class="subLi"><a href="#">조명</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+						<li class="mainLi">
+							<a href="#">이벤트/프로모션</a>
+							<ul class="subMenu">
+								<li class="subLi"><a href="#">할인이벤트</a></li>
+								<li class="subLi"><a href="#">프로모션</a></li>
+								<li class="subLi"><a href="#">&nbsp;</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header> <!-- header#header -->
+
+		<main id="main">
+			<div id="orderArea">
+				<div id="orderText">주문결제</div>
+				<hr>
+				<div>주문상품</div>
+				<table id="odrTable">
+					<tr>
+						<th>상품명/옵션정보</th>
+						<th>수량</th>
+						<th>판매가</th>
+						<th>할인금액</th>
+						<th>최종금액</th>
+						<th>배송정보</th>
+					</tr>
+					<tr>
+						<td id="itmIfo">
+							<img src="../images/couch1.jpg" alt="카우치소파이미지" width="170" height="140">
+							<ul>
+								<li>커스틴 천연면피 통가죽 4인 카우치형 소파</li>
+								<li>네이비</li>
+							</ul>
+						</td>
+						<td>2</td>
+						<td>21,90,000원</td>
+						<td><button type="button">할인쿠폰</button></td>
+						<td>4,380,000원</td>
+						<td>
+							직접 배송 <br>
+							(무료) <br>
+							0원
+						</td>
+					</tr>
+				</table>
+				<hr>
+				<div>주문자정보</div>
+				<table id="orderor">
+					<tr>
+						<td>주문자</td>
+						<td><input type="text" value="최호준"></td>
+					</tr>
+					<tr>
+						<td>휴대폰번호</td>
+						<td>
+							<select id="phoneNum">
+								<option>010</option>
+								<option>011</option>
+								<option>016</option>
+								<option>017</option>
+								<option>018</option>
+								<option>019</option>
+							</select>
+							<input type="text" value="8877">
+							<input type="text" value="2695">
+						</td>
+					</tr>
+				</table>
+				<hr>
+				<div>배송지 정보</div>
+				<table id="destination">
+					<tr>
+						<td>받는사람</td>
+						<td><input type="text" value="최호준"></td>
+					</tr>
+					<tr>
+						<td>휴대폰번호</td>
+						<td>
+							<select id="phoneNum">
+								<option>010</option>
+								<option>011</option>
+								<option>016</option>
+								<option>017</option>
+								<option>018</option>
+								<option>019</option>
+							</select>
+							<input type="text" value="8877">
+							<input type="text" value="2695">
+						</td>
+					</tr>
+					<tr>
+						<td>베송주소</td>
+						<td>
+							<div id="postalCode">
+								<span></span>
+								<span>우편번호 확인</span>
+							</div>
+							<div id="firstAddr">
+								<input type="text">
+							</div>
+							<div id="lastAddr">
+								<input type="text" placeholder="상세 주소 입력">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>배송요청사항</td>
+						<td><input type="text" placeholder="직접입력(배송요청 사항을 50자 이내로 남겨주세요.)"></td>
+					</tr>
+				</table>
+				<hr>
+				<div>결제수단</div>
+				<div id="paymentArea">
+					<div>
+						<div id="payment1">
+							<div>신용카드</div>
+							<div>실시간 계좌이체</div>
+							<div>가상계좌</div>
+						</div>
+						<div id="payment2">
+							<div><img src="../images/npayImg.PNG" alt=""></div>
+							<div><img src="../images/paycoImg.PNG" alt=""></div>
+							<div><img src="../images/kakaoPayImg.PNG" alt=""></div>
+							<div><img src="../images/samsungPayImg.PNG" alt=""></div>
+						</div>
+					</div> <!-- div#paymentArea -->
+
+					<div>
+						<div id="payTitle">최종결제금액</div>
+						<div id="itemprice">
+								<div>
+									<span>총 판매가</span>
+									<span>1,119,000원</span>
+								</div>
+								<div>
+									<span>판매가</span>
+									<span>1,119,000원</span>
+								</div>
+						</div>
+						<div id="totalPrice">
+							<div>최종결제금액</div>
+						</div>
+						<div id="payBtn">
+							<span>결제하기</span>
+						</div>
+					</div>
+				</div>
+			</div> <!-- div#orderArea -->
+		</main> <!-- main#main -->
+
+		<footer id="footer">
+			<div id="innerFooter">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+				<div>
+					<div id="footerLogo"><a href="#"><img src="../images/footer_logo.jpg" alt=""></a></div>
+					<div id="copyright">
+						<address>주소 : 서울특별시 서대문구 신촌로 141 은하빌딩 1층 이젠아카데미 컴퓨터학원 </address>
+						<p>대표전화 : 02-123-4567</p>
+						<p>팩스 : 123-456-789</p>
+						<p>이메일 : chhj1993@naver.com</p>
+					</div>
+					<div id="snsicon">
+						<a href="#"><img src="../images/ico_blog.png" alt="블롣그아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_fb.png" alt="페북아이콘" width="25"></a>
+						<a href="#"><img src="../images/ico_in.png" alt="인스타아이콘" width="25"></a>
+					</div>
+				</div>
+			</div>
+		</footer> <!-- footer#fotoer -->
+
+		<div id="topBtnArea">Top</div>
+	</div>
+
+</body>
+
+</html>

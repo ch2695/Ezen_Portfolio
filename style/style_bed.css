@@ -1,0 +1,139 @@
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a 				      {  text-decoration: none;  }
+a:link 			     {  color: #222;  }
+a:visited 			{  color: #222;  }
+a:hover 			{  color: #222;  }
+a:active 		  	 {  color: #222;  }
+img 				  {  vertical-align: middle;  }
+ul 						{  list-style: none;  }
+/* Reset 끝 */
+
+/* GuideLine */
+/*div#wrap 			      {  border: 1px solid #00f;  }*/
+/*header#header          {  border: 1px solid #f80;  }*/
+/*div#innerHeader        {  border: 1px solid #f80;  }*/
+/*#innerHeader>*    	  {  border: 1px solid #000;  }*/
+main#main 				 {  border-top: 1px solid #ccc;  }
+/* GuideLine */
+
+/* main#main 시작 */
+main#main {
+	height: 1500px;
+	padding: 40px;
+	text-align: center;
+}
+#main h2 {
+	margin-bottom: 30px;
+}
+#main button {
+	width: 150px;
+	font-size: 17px;
+	border: 1px solid #ccc;
+	background-color: rgba(204, 204, 204, 0.28);
+	padding: 10px 16px;
+	cursor: pointer;
+	margin-bottom: 30px;
+	outline: none;
+}
+#main button.selected {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+#main button:nth-child(3) {
+	position: relative;
+	left: -6px;
+	border-left: none;
+}
+#main button:nth-child(4) {
+	position: relative;
+	left: -12px;
+	border-left: none;
+}
+#main button:nth-child(5) {
+	position: relative;
+	left: -18px;
+	border-left: none;
+}
+#main button:nth-child(6) {
+	position: relative;
+	left: -24px;
+	border-left: none;
+}
+nav#gnb {
+	width: 1350px;
+	margin: 0 auto;
+}
+nav#gnb::after {
+	content: "";
+	display: block;
+	height: 80px;
+}
+#main ul {
+	text-align: left;
+}
+#main ul li {
+	color: #555;
+	padding: 10px;
+	font-size: 16px;
+	float: left;
+	cursor: pointer;
+}
+#main ul li.selected {
+	color: #000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+main#main>div:not(:nth-child(7)) {
+    display: none;
+}
+div.galleryList {
+	width: 1350px;
+    height: 1150px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+div.galleryArticle {
+	width: 300px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+div.galleryArticle span {
+	font-size: 15px;
+	padding: 5px 5px;
+	display: inline-block;
+}
+div.galleryArticle span:nth-child(2) {
+	width: 300px;
+	height: 50px;
+}
+div.galleryArticle span:nth-child(3) {
+	font-size: 25px;
+	color: #387738;
+}
+div.galleryArticle span:nth-child(4) {
+	color: #387738;
+}
+div#supersingBed>div:not(:nth-child(2)) {
+    display: none;
+}
+div#kingQueen>div:not(:nth-child(2)) {
+    display: none;
+}
+/* main#main 끝 */
+
+
+
+
+
+
+
+
+

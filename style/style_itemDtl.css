@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a 				      {  text-decoration: none;  }
+a:link 			     {  color: #222;  }
+a:visited 			{  color: #222;  }
+a:hover 			{  color: #222;  }
+a:active 		  	 {  color: #222;  }
+img 				  {  vertical-align: middle;  }
+ul 						{  list-style: none;  }
+/* Reset 끝 */
+
+/* GuideLine */
+/*div#wrap 			      {  border: 1px solid #000;  }*/
+/*header#header          {  border: 2px solid #f80;  }*/
+/*div#innerHeader        {  border: 1px solid #f80;  }*/
+/*#innerHeader>*    	  {  border: 1px solid #000;  }*/
+main#main                {  border-top: 1px solid #ccc;  }
+/*footer#footer             {  border: 1px solid #000;  }*/
+/* GuideLine */
+
+/* main#main 시작 */
+main#main {
+	height: 2100px;
+	padding: 35px;
+}
+main#main>div:first-child {
+	display: flex;
+	justify-content: center;
+}
+main#main>div>div {
+	width: 600px;
+	height: 500px;
+	border: 1px solid #eee;
+}
+div#itemNm {
+	font-size: 22px;
+	margin-bottom: 50px  !important;
+}
+div#selectArea {
+	padding: 20px;
+	padding-left: 40px;
+}
+div#selectArea>div {
+	margin-bottom: 15px;
+}
+div#oriprice span:first-child {
+	font-size: 17px;
+	margin-right: 72px;
+}
+div#oriprice span:nth-child(2),
+div#oriprice span:last-child {
+	color: #ccc;
+	text-decoration: line-through;
+}
+div#panmega span:first-child {
+	font-size: 17px;
+	margin-right: 55px;
+}
+div#panmega span:nth-child(2) {
+	font-size: 22px;
+	font-weight: bold;
+}
+div#panmega span:last-child {
+	font-weight: bold;
+}
+div#selectArea ul li {
+	margin-bottom: 15px;
+}
+div#selectArea ul li span {
+	width: 105px;
+	font-size: 17px;
+	display: inline-block;
+}
+div#selectArea select {
+	width: 130px;
+	padding: 4px 5px;
+	outline: none;
+}
+div#selectArea ul li:last-child {
+	margin-top: 40px;
+}
+div#selectArea ul li:last-child span:nth-child(2) {
+	color: rgba(204, 10, 10, 0.97);
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10px;
+}
+div#btnArea span {
+	width: 215px;
+	font-size: 20px;
+	display: inline-block;
+	padding: 13px 20px;
+	text-align: center;
+	margin-top: 30px;
+	cursor: pointer;
+}
+div#btnArea span:first-child {
+	border: 1px solid #ccc;
+}
+div#btnArea span:last-child {
+	color: #fff;
+	background-color: #008400;
+}
+#main>div:nth-child(2) {
+	width: 1200px;
+	height: 400px;
+	padding-top: 70px;
+	margin: 0 auto;
+}
+#main>div:nth-child(2) p {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#main>div:nth-child(2) textarea {
+	width: 1200px;
+	outline: none;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+#main>div:nth-child(2) span.reviewBtn {
+	width: 170px;
+    height: 47px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	text-align: center;
+	padding: 12px 10px;
+}
+#main>div:nth-child(2) select {
+	width: 500px;
+	padding: 14px 10px;
+	border: 1px solid #ccc;
+	position: relative;
+	top: -2px;
+}
+#main>div:nth-child(2)>span:last-child {
+	color: #fff;
+	background-color: #000;
+}
+#main>div#reView {
+	width: 1200px;
+	margin: 80px auto;
+	border: none;
+}
+#main>div#reView p {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#main>div#reView>div {
+	width: 1200px;
+	height: 300px;
+	border: none;
+}
+#main>div#reView div.rvMent {
+	width: 1000px;
+	margin-top: 20px;
+}
+div.rvImg {
+	padding: 20px 20px 0 0;
+}
+div.rvImg ul li {
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+/* main#main 끝 */
+
+/* 모달레이어 팝업 시작 */
+
+div#modalBackground {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.68);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	display: none;
+}
+
+	/* 카우치형 첫번째 모달 레이어 */
+div.modalArticle {
+	width: 460px;
+	border: 4px solid rgba(0, 0, 0, 0.55);
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+	text-align: center;
+}
+div.modalArticle>div {
+	margin-top: 20px;
+	text-align: left;
+}
+div.modalArticle>div:nth-child(3) {
+    padding: 20px 0 20px 0;
+}
+span.closeBtn {
+	position: absolute;
+	right: 5px;
+	top: 0;
+	font-size: 20px;
+	cursor: pointer;
+}
+	/* 카우치형 첫번째 모달 레이어 */
+
+
+/* 모달레이엎 팝업 끝 */
+
+
+
+
+
+
+

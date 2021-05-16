@@ -1,0 +1,94 @@
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a 				      {  text-decoration: none;  }
+a:link 			     {  color: #222;  }
+a:visited 			{  color: #222;  }
+a:hover 			{  color: #222;  }
+a:active 		  	 {  color: #222;  }
+img 				  {  vertical-align: middle;  }
+ul 						{  list-style: none;  }
+/* Reset 끝 */
+
+/* GuideLine */
+/*div#wrap 			      {  border: 1px solid #000;  }*/
+/*header#header          {  border: 2px solid #f80;  }*/
+/*div#innerHeader        {  border: 1px solid #f80;  }*/
+main#main                {  border-top: 1px solid #ccc;  }
+/*footer#footer             {  border: 1px solid #000;  }*/
+/* GuideLine */
+
+/* main#main 시작 */
+main#main {
+    height: 600px;
+    padding: 20px;
+}
+#main #findIDTxt {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+#main>div#findIDArea {
+    width: 600px;
+    height: 370px;
+    border: 1px solid #ccc;
+    margin: 30px auto;
+}
+div#chk {
+    font-size: 13px;
+    margin-top: 100px;
+    padding-left: 45px;
+}
+div#chk input[type=radio] {
+    width: 16px;
+    height: 16px;
+}
+div#chk span {
+    padding: 0 17px 0 5px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+div#findIDArea table {
+    width: 500px;
+    height: 120px;
+    border-collapse: collapse;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+div#findIDArea table td:nth-child(2) {
+    padding-left: 20px;
+    width: 150px;
+}
+div#findIDArea table input {
+    width: 340px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    outline: none;
+}
+div#findIDArea span#findID {
+    color: #fff;
+    width: 120px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #008400;
+    cursor: pointer;
+}
+div#findIDArea table.findPhone {
+    display: none;
+}
+/* main#main 끝 */
+
+
+
+
+
+

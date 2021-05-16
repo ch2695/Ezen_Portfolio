@@ -1,0 +1,231 @@
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a 				      {  text-decoration: none;  }
+a:link 			     {  color: #222;  }
+a:visited 			{  color: #222;  }
+a:hover 			{  color: #222;  }
+a:active 		  	 {  color: #222;  }
+img 				  {  vertical-align: middle;  }
+ul 						{  list-style: none;  }
+/* Reset 끝 */
+
+/* GuideLine */
+/*div#wrap 			      {  border: 1px solid #00f;  }*/
+/*header#header          {  border: 1px solid #f80;  }*/
+/*div#innerHeader        {  border: 1px solid #f80;  }*/
+/*#innerHeader>*    	  {  border: 1px solid #000;  }*/
+main#main 				 {  border-top: 1px solid #ccc;  }
+/* GuideLine */
+
+/* main#main 시작 */
+main#main #mainDiv {
+	width: 1440px;
+	height: 1150px;
+    padding: 30px 10px;
+    display: flex;
+	margin: 0 auto;
+}
+#main aside#aside {
+    width:  220px;
+}
+#aside ul#myPgMain {
+	padding: 10px;
+	padding-top: 20px;
+}
+aside#aside ul#myPgMain>li {
+	font-size: 17px;
+	width: 196px;
+	text-align: left;
+	padding: 0 0 40px 0;
+	border: none;
+	cursor: pointer;
+}
+ul#myPgMain>li.selected span {
+	font-weight: bold;
+}
+aside#aside ul#myPgMain>li:first-child {
+	padding-bottom: 20px;
+	font-size: 25px;
+	font-weight: bold;
+}
+ul.myPgSub {
+	background-color: rgba(238, 238, 238, 0.58);
+	padding: 12px 10px;
+	margin-top: 15px;
+}
+ul.myPgSub li {
+	font-size: 15px;
+	line-height: 36px;
+}
+ul.myPgSub li:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+ul.myPgSub li.selected {
+	font-weight: bold;
+	text-decoration: underline;
+}
+hr {
+	margin-bottom: 20px;
+}
+#main div#orderList_Area {
+    flex: 1;
+	padding: 16px 0 0 100px;
+}
+div#orderTxt {
+	font-size: 25px;
+	font-weight: bold;
+}
+div#orderList_Area>hr {
+	width: 1060px;
+	margin-top: 20px;
+	border: 1px solid #eee;
+}
+div#period {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+div#period>div {
+	height: 80px;
+}
+div#period1>ul {
+	margin-top: 25px;
+}
+div#period1>ul li {
+	width: 100px;
+	float: left;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 5px 0 5px 0;
+	cursor: pointer;
+}
+div#period1>ul li.selected {
+	border: 1px solid #000;
+}
+div#period1>ul li:not(:first-child) {
+}
+div#period2 {
+	padding-top: 16px;
+}
+div#period2 input.Date {
+	width: 175px;
+	height: 47px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+}
+div#period2>img:nth-child(3) {
+	position: relative;
+	right: 240px;
+	top: -1px;
+	cursor: pointer;
+}
+div#period2>img:nth-child(4) {
+	position: relative;
+	right: 85px;
+	top: -1px;
+	cursor: pointer;
+}
+div#period2 span {
+	color: #fff;
+	width: 140px;
+	height: 46px;
+	position: relative;
+	right: 60px;
+	text-align: center;
+	line-height: 46px;
+	background-color: #000;
+	display: inline-block;
+	cursor: pointer;
+}
+div#orderItemTxt {
+	font-size: 20px;
+	margin-top: 20px;
+}
+table#odrTable {
+    width: 1140px;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+table#odrTable tr:nth-child(2),
+table#odrTable tr:nth-child(3){
+	display: none;
+}
+table#odrTable td {
+    padding: 20px 0px 10px 0px;
+}
+table#odrTable td:not(:first-child) {
+    text-align: center;
+}
+table#odrTable th {
+    height: 50px;
+    border: 1px solid #eee;
+    background-color: rgba(230, 230, 230, 0.42);
+}
+table#odrTable th:first-child {
+    width: 520px;
+}
+table#odrTable button {
+	width: 80px;
+	height: 30px;
+	border: 1px solid #bbb;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+button.ch_re {
+	margin-bottom: 10px;
+	background-color: #ddd;
+}
+table#odrTable tr:not(:first-child) td.itmIfo {
+    width: 520px;
+    display: flex;
+}
+table#odrTable td.itmIfo img {
+	margin-right: 20px;
+}
+td.itmIfo ul {
+	margin-top: 20px;
+}
+td.itmIfo ul li {
+	font-size: 14px;
+	line-height: 35px;
+}
+div#ordStateTxt {
+	font-size: 20px;
+}
+div#ordState {
+	height: 100px;
+	margin-top: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+div#ordState>div {
+	font-size: 18px;
+	flex: 1;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 100px;
+}
+div#ordState>div span:first-child {
+	margin-right: 43px;
+}
+div#ordState>div:not(:last-child) {
+	border-right: none;
+}
+
+
+
+
